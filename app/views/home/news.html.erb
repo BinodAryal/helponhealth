@@ -1,0 +1,11 @@
+<div class="container">
+	<div class='col-lg-12'>
+		<% @news.each do |news| %>
+		<div class="jumbotron">
+		  <h1><%= news.title %></h1>
+		  <p><%= news.body %></p>
+		  <img src="<%= news.image_url%>">	
+		</div>
+		<% end %>
+	</div>
+</div>		

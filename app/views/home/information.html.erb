@@ -1,0 +1,14 @@
+<div class="container">
+	
+	<div class="col-lg-12">
+		<% @informations.each do |information| %>
+		<div class="panel panel-default">
+		  <div class="panel-heading"><h3><%= information.title %></h3></div>
+		  <div class="panel-body">
+		  	 <img src="<%= information.image_url%>">
+		     <p class="center-right"><%= information.body %></p>
+		  </div>
+		</div>
+		<% end %>
+	</div>
+</div>		
